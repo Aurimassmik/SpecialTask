@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RGB to HEX converter</title>
+</head>
+<body>
+<h1>Converter</h1>
+<p>Example:255,255,255    Empty inputs counts as 0.</p>
+<p id="error" ></p>
+<form id="form" action="/" method="GET">
+        <label for="rCode">RGB:</label>
+        <input type="text" id="rgbCode" min="0" maxlength="11" onkeypress="return isNumber(event)" value="">
+    </div>
+    <div>
+        <button type="submit">Convert</button>
+    </div>
+    <div>
+        <label for="hexValue">HEX Code:</label>
+        <input type="text" value="" id="hexValue" onkeypress="return false;" >
+    </div>
+
+</form>
+<script src="index.js"></script>
+</body>
+</html>
